@@ -1,44 +1,69 @@
-body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell;
-    opacity: 0,9;
+<section id="locations">
 
+            <div class="locations-title">
 
+                <h2>Locations</h2>
 
-.header {
-    opacity: 0.9; 
-    align-items: center;
-    padding: 30px 10px;
-    border-bottom: 1px solid seashell;
-    height: 69px;
+            </div>
 
-}
-.header-content a{
-    text-align: right;
-    text-decoration: none;
-}
+            <div class="locations-container">
 
-#mission {
-    width: 90%;
-    max-height: 700px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1200px;
-    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+                <div class="adress" id="downtown">
 
-.totm {
-    width: 300px;
-    height: 200px;
-}
+                    <h3>Downtown</h3>
 
+                    <p>384 West 4th St</p>
+
+                    <p>Suite 108</p>
+
+                    <p>Portland, Maine</p>
+
+                </div>
+
+                <div class="adress" id="east_bayside">
+
+                    <h3>East Bayside</h3>
+
+                    <p>3433 Phisherman's Avenue</p> 
+
+                    <p>(Norwest Corner)</p>
+
+                    <p>Portland, Maine</p>
+
+                </div>
+
+                <div class="adress" id="oakdale">
+
+                    <h3>Oakdale</h3>
+
+                    <p>515 Crescent Avenue</p>
+
+                    <p>Second Floor</p>
+
+                    <p>Portland, Maine</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!---Contact info-->
+
+        <section id="contact">
+
+            <h2>The Tea Cozy</h2>
+
+            <h5>contact@theteacozy.com</h5>
+
+            <h5>917-555-8904</h5>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; The Tea Cozy 2017</p>
+
+    </footer>
