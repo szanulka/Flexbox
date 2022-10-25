@@ -4,8 +4,6 @@
     background-color: black;   
     opacity: 0.9;
     text-align: center;
-
-    /*reset of browser's default values*/
     margin: 0;
     padding: 0;
 }
@@ -350,3 +348,5 @@ footer {
     footer {
         top: 109px;
     }
+
+}
