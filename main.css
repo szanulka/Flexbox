@@ -1,69 +1,352 @@
-<section id="locations">
+* {
+    font-family: Helvetica;
+    color: seashell;
+    background-color: black;   
+    opacity: 0.9;
+    text-align: center;
 
-            <div class="locations-title">
+    /*reset of browser's default values*/
+    margin: 0;
+    padding: 0;
+}
 
-                <h2>Locations</h2>
+html {
+    font-size: 22px;
+}
 
-            </div>
+/* header section */
 
-            <div class="locations-container">
+header {
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+}
 
-                <div class="adress" id="downtown">
+header a { 
+    margin: 10px;
+}
 
-                    <h3>Downtown</h3>
+header img {
+    height: 50px;
+    margin-left: 10px;
+}
 
-                    <p>384 West 4th St</p>
+/*main content*/
 
-                    <p>Suite 108</p>
+main {
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 66px;
+}
 
-                    <p>Portland, Maine</p>
+/*mission section*/
 
-                </div>
+#mission {
+    width: 90%;
+    max-height: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1200px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-                <div class="adress" id="east_bayside">
+#mission h2,
+#mission h4 {
+    width: 100%;
+    padding: 0.5%;
+}
 
-                    <h3>East Bayside</h3>
+/*Featured tea section*/
 
-                    <p>3433 Phisherman's Avenue</p> 
+#featured_tea {
+    width: 75%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
 
-                    <p>(Norwest Corner)</p>
+.container-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;    
+}
 
-                    <p>Portland, Maine</p>
+.container-head h2 {
+    margin: 2% 0;
+}
 
-                </div>
+.figure-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
-                <div class="adress" id="oakdale">
+figure {
+    width: 300px;
+    height: 67%;
+    overflow: hidden;
+    margin: 1%;
+}
 
-                    <h3>Oakdale</h3>
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-                    <p>515 Crescent Avenue</p>
+figcaption {
+    margin-top: 3.334%;
+}
 
-                    <p>Second Floor</p>
+/*locations section*/
 
-                    <p>Portland, Maine</p>
+#locations {
+    width: 90%;
+    max-height: 500px;
+    max-width: 1200px;
+    padding-top: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    align-items: center;
+    flex: 1 1200px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-                </div>
+.locations-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
 
-            </div>
+.locations-title h2 {
+    background-color: transparent;
+}
 
-        </section>
+.locations-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: transparent;
+    flex-wrap: wrap;
+    opacity: 1; 
+}
 
-        <!---Contact info-->
+.adress{
+    margin: 20px;
+    display: flex;
+    flex-basis: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;       
+}
 
-        <section id="contact">
+.adress h3 {
+    padding: 5% 0;
+    width: 100%;
+}
 
-            <h2>The Tea Cozy</h2>
+.adress p {
+    padding: 7.5% 0;
+    width: 100%;
+}
 
-            <h5>contact@theteacozy.com</h5>
+/*contact info section*/
 
-            <h5>917-555-8904</h5>
+#contact {
+    height: 200px;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
 
-        </section>
+#contact h2 {
+    margin: 1% auto;
+}
 
-    </main>
+#contact h5 {
+    margin: 2.9% auto;
+}
 
-    <footer>
+/*footer*/
 
-        <p>&copy; The Tea Cozy 2017</p>
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+}
 
-    </footer>
+@media only screen and (max-width:1133px) {
+
+    /*makes locations section higher*/
+    #locations {
+        max-height: 700px;
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width:755px) {
+
+    main {
+        top: 107px;
+    }
+
+    /*aligns header in columns*/
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header img {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    #mission {
+        width: 90%;
+        max-height: 500px;
+    }
+
+    #featured_tea {
+        width: 100%;
+        padding-top: 14.17%;
+    }
+
+    #locations {
+        width: 90%;
+        padding-top: 14.17%;
+        max-height: 1000px;
+    }
+
+    #contact {
+        height: 150px;
+    }
+
+    footer {
+        position: relative;
+        top: 40px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    main {
+        top: 47px;
+        padding-bottom: 0;
+    }
+    /*removes headers logo*/
+    header img {
+        display: none;
+    }
+
+    #mission {
+        width: 95%;
+    }
+
+    #mission h4 {
+        font-size: 0.85rem;
+    }
+
+    #featured_tea {
+        padding-top: 46px;
+    }
+
+    #featured_tea h4 {
+        font-size: 0.95rem;
+    }
+
+    figure {
+        width: 95%;
+        margin: none;
+    }
+
+    #locations {
+        width: 95%;
+        max-height: 900px;
+        background-position: right;
+    }
+
+    .adress p {
+        padding: 5% 0;
+    }
+
+    footer {
+        padding: 3%;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    main {
+        top: 109px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    
+    header a{
+        margin: 5px;
+    }
+
+    #featured_tea {
+        padding-top: 110px;
+    }
+
+    #locations {
+        margin-top: 55px;
+        padding-top: 55px;
+    }
+
+    #locations h2 {
+        padding-bottom: 20px;
+    }
+
+    #contact h2 {
+        padding-top: 20px;
+    }
+
+    footer {
+        top: 109px;
+    }
